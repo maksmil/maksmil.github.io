@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sklep motoryzacyjny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">TOKYO DRIFT</h1>
+
+    <div class="wrap">
+        <div class="box">
+            <img src="zdj/skyline.png" alt="Samochód 1" class="image">
+            <div class="opis">
+                <h2>Nissan Skyline</h2>
+                <p>&nbsp;Rocznik: 2003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;przebieg: 0km</p>
+                <p class="car-price">cena od: 159 000</p>
+                <a href="zakupskyline.html">
+                <form action="zakupskyline.html" method="post">
+                
+                    <input type="hidden" name="carId" value="1">
+                    <input type="submit" class="kup" value="Kup teraz">
+                </form>
+            </a>            
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="zdj/GTR.png" alt="Samochód 2" class="image">
+            <div class="opis">
+                <h2>Nissan GTR</h2>
+                <p>&nbsp;Rocznik: 2007 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;przebieg: 0km</p>
+                <p class="car-price">cena od: 324 000</p>
+                <a href="zakupGTR.html">
+                <form action="zakupGTR.html" method="post">
+                    <input type="hidden" name="carId" value="2">
+                    <input type="submit" class="kup" value="Kup teraz">
+                </form>
+            </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="zdj/Cefiro.png" alt="Samochód 3" class="image">
+            <div class="opis">
+                <h2>Nissan GTR</h2>
+                <p>&nbsp;Rocznik: 1998 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;przebieg: 0km</p>
+                <p class="car-price">cena od: 124 000</p>
+                <a href="zakupcefiro.html">
+                <form action="zakupcefiro.html" method="post">
+                    <input type="hidden" name="carId" value="2">
+                    <input type="submit" class="kup" value="Kup teraz">
+                </form>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
