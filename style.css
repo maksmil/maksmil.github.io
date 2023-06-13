@@ -1,0 +1,79 @@
+/* Stylizacja paska nawigacji */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Stylizacja tła strony głównej */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stylizacja boxów z obrazami */
+.image-box {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #333;
+}
+
+.image-box img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-info {
+    color: #000000;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.image-info span {
+    display: block;
+}
+
+.image-info .title {
+    font-size: 20px;
+}
+text{
+    color:#111
+}
