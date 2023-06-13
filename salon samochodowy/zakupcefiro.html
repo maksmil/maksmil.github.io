@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strona zakupu samochodu</title>
+    <link rel="stylesheet" href="skyline.css">
+</head>
+<body>
+    <h1>Wybierz model samochodu</h1>
+    <div class="box">
+        <form id="car-form">
+            <div>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="delivery-date">Data dostawy:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+            </div>
+            
+            <div>
+                <label>Metoda płatności:</label>
+                <div>
+                    <input type="radio" id="payment-method-lease" name="payment-method" value="lease" required>
+                    <label for="payment-method-lease">Leasing</label>
+                </div>
+                <div>
+                    <input type="radio" id="payment-method-cash" name="payment-method" value="cash" required>
+                    <label for="payment-method-cash">Gotówka</label>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Wybierz silnik:</h3>
+                <div>
+                    <input type="radio" id="engine-2.0-156" name="engine" value="2.0-156">
+                    <label for="engine-2.0-156">Silnik: 2.0 156KM</label>
+                </div>
+
+            
+            <div class="options">
+                <h3>Dodatki:</h3>
+                <div>
+                    <input type="checkbox" id="option-leather" name="option" value="leather">
+                    <label for="option-leather">Skórzane fotele (5000 zł)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="option-navigation" name="option" value="navigation">
+                    <label for="option-navigation">Nawigacja GPS (3000 zł)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="option-sunroof" name="option" value="sunroof">
+                    <label for="option-sunroof">Szyberdach (4000 zł)</label>
+                </div>
+            </div>
+            
+            <input type="submit" value="Oblicz cenę">
+        </form>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
